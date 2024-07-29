@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Préférences</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="logo de l'ENI" class="header-img" />
+      <h1 class="header-title">Promo EDWM2407</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="preference.html">Préférences</a></li>
+          <li><a href="carte.html">Carte</a></li>
+          <li><a href="information.html">Informations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Préférences du site</h2>
+      <section>
+        <h3>Thème du site</h3>
+        <div>
+          <select name="theme" id="theme-select">
+            <option value="clair">Clair</option>
+            <option value="sombre">Sombre</option>
+          </select>
+        </div>
+        <h3>Format d'affichage de la liste des apprenants</h3>
+        <div>
+          <input type="radio" id="liste" name="type_affichage" checked />
+          <label for="liste">Liste (Table)</label>
+          <input type="radio" id="carte" name="type_affichage" />
+          <label for="carte">Cartes (Grid)</label>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
