@@ -3,59 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/information.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/loadHeader.js" defer></script>
     <script src="js/script.js" defer></script>
     <title>Informations</title>
   </head>
   <body>
-    <header>
-      <img src="assets/logo.png" alt="logo de l'ENI" class="header-img" />
-      <h1 class="header-title">Promo EDWM2407</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="preference.html">Préférences</a></li>
-          <li><a href="carte.html">Carte</a></li>
-          <li><a href="information.html">Informations</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
     <main>
-      <section>
-        <h2>* INFORMATIONS GENERALES *</h2>
-        <span
-          >Formation du <strong>28/06/2024</strong> au
-          <strong>14/02/2025</strong></span
-        >
+      <section class="general-information">
+        <h2 class="section-title">INFORMATIONS GENERALES</h2>
+        <span>
+          Formation du <strong>28/06/2024</strong> au
+          <strong>14/02/2025</strong>
+        </span>
         <span>Nombre d'apprenants: <strong>19</strong></span>
       </section>
-      <section>
-        <div>
-          <h3>Description</h3>
-          <div>
-            <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+      <section class="details">
+        <div class="details-container">
+          <h3 class="details-title">Description</h3>
+          <div class="description-text">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
               tenetur nostrum harum id quo quos nobis omnis labore excepturi
               dolorum placeat inventore repudiandae enim dicta dolor doloribus
-              nemo, consequuntur sint?</span
-            >
+              nemo, consequuntur sint?
+            </p>
           </div>
         </div>
-        <div>
-          <h3>Liens utiles</h3>
-          <div>
-            <a href="https://www.eni-ecole.fr/" target="_blank"
-              >Site de l'ENI</a
-            >
-            <a href="https://www.eni-ecole.fr/" target="_blank"
-              >Site de l'ENI</a
-            >
-            <a href="https://www.eni-ecole.fr/" target="_blank"
-              >Site de l'ENI</a
-            >
-            <a href="https://www.eni-ecole.fr/" target="_blank"
-              >Site de l'ENI</a
-            >
+        <div class="details-container">
+          <h3 class="details-title">Liens utiles</h3>
+          <div class="useful-links">
+            <ul>
+              <li>
+                <a
+                  href="https://www.eni-ecole.fr/"
+                  target="_blank"
+                  class="link"
+                >
+                  Site de l'ENI
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eni-ecole.fr/"
+                  target="_blank"
+                  class="link"
+                >
+                  Site de l'ENI
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eni-ecole.fr/"
+                  target="_blank"
+                  class="link"
+                >
+                  Site de l'ENI
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eni-ecole.fr/"
+                  target="_blank"
+                  class="link"
+                >
+                  Site de l'ENI
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
