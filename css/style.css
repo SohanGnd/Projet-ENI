@@ -49,6 +49,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.header-display {
+#header-display {
   font-weight: 400;
 }
