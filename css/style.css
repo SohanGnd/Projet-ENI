@@ -58,6 +58,10 @@ body.dark-mode {
   color: #e0e0e0;
 }
 
+body.dark-mode .header-img {
+  filter: brightness(0.7);
+}
+
 body.dark-mode header {
   background-color: #333;
 }
@@ -68,4 +72,35 @@ body.dark-mode nav a {
 
 body.dark-mode nav a:hover {
   color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  #header-display {
+    margin-top: 10px;
+  }
 }

@@ -154,3 +154,53 @@ body.dark-mode .btn-save:hover {
   background-color: #555;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .preferences-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .affichage-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .theme-selector select,
+  .affichage-selector input {
+    margin-left: 0;
+  }
+
+  .affichage-selector {
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .affichage-selector div {
+    flex-direction: column;
+  }
+
+  .affichage-selector label {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .button-section {
+    width: 100%;
+  }
+
+  .btn-homepage,
+  .btn-save {
+    width: 100%;
+    text-align: center;
+  }
+}
