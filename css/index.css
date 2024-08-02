@@ -1,0 +1,115 @@
+/* Style pour le mode table */
+section {
+  margin: 0 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+.apprenants-container.liste table {
+  display: table;
+}
+
+.apprenants-container.liste .apprenant-card {
+  display: none;
+}
+
+/* Style pour le mode grid */
+.apprenants-container.carte {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.apprenants-container.carte table {
+  display: none;
+}
+
+.apprenants-container.carte .apprenant-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.apprenants-container.carte .apprenant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apprenant-identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #134a7f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+.section_overflow.disable-overflow {
+  overflow: visible;
+  width: 100%;
+  max-height: none;
+}
+
+/* Scrollbar */
+.section_overflow {
+  overflow: auto;
+  width: 50%;
+  max-height: 80vh;
+}
+
+.section_overflow::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.section_overflow::-webkit-scrollbar {
+  width: 0.22vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.section_overflow::-webkit-scrollbar-thumb {
+  background-color: rgb(230, 230, 230);
+  border-radius: 6px;
+}
