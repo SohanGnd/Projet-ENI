@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/preference.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,33 +12,53 @@
       rel="stylesheet"
     />
     <script src="js/loadHeader.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/preference.js" defer></script>
     <title>Préférences</title>
   </head>
   <body>
     <div id="header-placeholder"></div>
     <main>
-      <h2>Préférences du site</h2>
-      <section>
-        <h3>Thème du site</h3>
-        <div>
-          <select name="theme" id="theme-select">
-            <option value="clair">Clair</option>
-            <option value="sombre">Sombre</option>
-          </select>
+      <h2 class="preferences-title">Préférences du site</h2>
+      <section class="preferences-section">
+        <div class="theme-section">
+          <h3 class="section-title">Thème du site</h3>
+          <div class="theme-selector">
+            <select name="theme" id="theme-select">
+              <option value="clair">Clair</option>
+              <option value="sombre">Sombre</option>
+            </select>
+          </div>
         </div>
-        <h3>Format d'affichage de la liste des apprenants</h3>
-        <div>
-          <input type="radio" id="liste" name="type_affichage" checked />
-          <label for="liste">Liste (Table)</label>
-          <input type="radio" id="carte" name="type_affichage" />
-          <label for="carte">Cartes (Grid)</label>
-        </div>
-        <div>
-          <a href="index.html" class="btn">Retour à la page d'Accueil</a>
-          <button id="save-button">Enregistrer</button>
+        <div class="affichage-section">
+          <h3 class="section-title">
+            Format d'affichage de la liste des apprenants
+          </h3>
+          <div class="affichage-selector">
+            <div>
+              <input
+                type="radio"
+                id="liste"
+                name="type_affichage"
+                value="liste"
+              />
+              <label for="liste">Liste (Table)</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="carte"
+                name="type_affichage"
+                value="carte"
+              />
+              <label for="carte">Cartes (Grid)</label>
+            </div>
+          </div>
         </div>
       </section>
+      <div class="button-section">
+        <a href="index.html" class="btn-homepage">Retour à la page d'Accueil</a>
+        <button id="save-button" class="btn-save">Enregistrer</button>
+      </div>
     </main>
   </body>
 </html>

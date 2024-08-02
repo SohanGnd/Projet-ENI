@@ -1,0 +1,116 @@
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 4.7rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preferences-title {
+  font-size: 2rem;
+  color: #444;
+}
+.preferences-title,
+.section-title {
+  margin: 0;
+}
+
+.preferences-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.theme-section,
+.affichage-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.theme-selector select,
+.affichage-selector input {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.affichage-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.affichage-selector div {
+  display: flex;
+  align-items: center;
+}
+
+.affichage-selector label {
+  margin-left: 0.5rem;
+}
+
+/* Bouton */
+
+.button-section {
+  gap: 1rem;
+  display: flex;
+}
+
+.btn-homepage {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #444;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #444;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+}
+
+.btn-homepage:hover {
+  background-color: #444;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.btn-save {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #444;
+}
+
+.btn-save:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
