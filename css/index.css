@@ -113,3 +113,53 @@ button:hover {
   background-color: rgb(230, 230, 230);
   border-radius: 6px;
 }
+
+/* Dark Mode */
+body.dark-mode section {
+  color: #e0e0e0;
+}
+
+body.dark-mode table {
+  border-color: #444;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+  border: 1px solid #444;
+  background-color: #2e2e2e;
+}
+
+body.dark-mode tbody > tr:nth-of-type(even) {
+  background-color: #3e3e3e;
+}
+
+body.dark-mode .apprenants-container.carte .apprenant-card {
+  border-color: #444;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .apprenants-container.carte .apprenant-card:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode button {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode button:hover {
+  background-color: #777;
+}
+
+body.dark-mode .section_overflow::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .section_overflow::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .section_overflow::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
+}

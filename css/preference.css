@@ -114,3 +114,43 @@ main {
 .btn-save:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Dark Mode */
+body.dark-mode main {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .preferences-title,
+body.dark-mode .section-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .theme-selector select,
+body.dark-mode .affichage-selector input {
+  background-color: #2e2e2e;
+  border: 1px solid #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-homepage {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .btn-homepage:hover {
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn-save {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-save:hover {
+  background-color: #555;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}

@@ -4,7 +4,6 @@ body {
 }
 
 /* Header */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -51,4 +50,22 @@ nav a:hover {
 
 #header-display {
   font-weight: 400;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #333;
+}
+
+body.dark-mode nav a {
+  color: #e0e0e0;
+}
+
+body.dark-mode nav a:hover {
+  color: #fff;
 }

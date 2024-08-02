@@ -84,3 +84,42 @@ li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   color: white;
 }
+
+/* Dark Mode */
+body.dark-mode main {
+  color: #e0e0e0;
+}
+
+body.dark-mode .general-information {
+  color: #e0e0e0;
+}
+
+body.dark-mode .description-text,
+body.dark-mode .useful-links {
+  border-color: #444;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .details-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .link {
+  color: #c0c0c0;
+}
+
+body.dark-mode .link:hover {
+  color: #fff;
+}
+
+body.dark-mode .btn {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #777;
+  color: #fff;
+}
